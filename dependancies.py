@@ -56,8 +56,8 @@ def validate_username(username):
 def sign_up():
     with st.form(key="sign up", clear_on_submit=True):
         st.subheader(":green[Sign Up]")
-        email = st.text_input(":blue[SiswaMail]",
-                              placeholder="Enter Your SiswaMail")
+        email = st.text_input(":blue[Email]",
+                              placeholder="Enter Your Email")
         username = st.text_input(
             ":blue[Username]", placeholder="Enter Your Username")
         password1 = st.text_input(
@@ -91,9 +91,9 @@ def sign_up():
                     else:
                         st.warning("Invalid Username")
                 else:
-                    st.warning("Siswamail Already Exists")
+                    st.warning("Email Already Exists")
             else:
-                st.warning("Invalid SiswaMail")
+                st.warning("Invalid Email")
 
         btn1, btn2, btn3, btn4, btn5 = st.columns(5)
 
