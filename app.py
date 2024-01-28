@@ -2,7 +2,7 @@
 import tempfile
 import os
 from streamlit_option_menu import option_menu
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
