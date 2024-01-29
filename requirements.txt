@@ -11,3 +11,7 @@ streamlit_authenticator==0.2.3
 streamlit_lottie==0.0.5
 streamlit_option_menu==0.3.12
 faiss-cpu
+tiktoken
+pandas
+numpy
+streamlit_large_data
