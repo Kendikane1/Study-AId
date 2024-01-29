@@ -14,4 +14,3 @@ faiss-cpu
 tiktoken
 pandas
 numpy
-streamlit_large_data
