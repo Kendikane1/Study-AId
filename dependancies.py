@@ -34,7 +34,7 @@ def get_usernames():
     users = db.fetch()
     usernames = []
     for user in users.items:
-        usernames.append(["key"])
+        usernames.append(user["username"])
     return usernames
 
 
@@ -47,7 +47,7 @@ def validate_email(email):
 
 
 def validate_username(username):
-    pattern = "^[a-zA-Z0-9]*$"
+    pattern = "^[a-zA-Z0-9_]*$"
     if re.match(pattern, username):
         return True
     return False
